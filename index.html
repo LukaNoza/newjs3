@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <!-- 1).
+    <h1>Equation Calculator</h1>
+    <h2>2*X – 3*Y + Z = 0</h2>
+    <label for="y-input">Enter the value of Y:</label>
+    <input type="number" id="y-input"><br><br>
+    <label for="z-input">Enter the value of Z:</label>
+    <input type="number" id="z-input"><br><br>
+    <button onclick="calculateX()">Calculate X</button>
+    <br><br>
+    <div id="output"></div>
+
+    <script>
+        function calculateX() {
+          var y = parseInt(document.getElementById("y-input").value);
+          var z = parseInt(document.getElementById("z-input").value);
+          
+          var x = (3 * y - z) / 2;
+          
+          document.getElementById("output").innerHTML = "The value of X is: " + x;
+        }
+      </script> -->
+
+ <!-- 2).     
+<label for="side-a">Enter the value of side a:</label>
+<input type="number" id="side-a">
+
+<label for="side-b">Enter the value of side b:</label>
+<input type="number" id="side-b">
+
+<button onclick="calculateHypotenuse()">Calculate Hypotenuse</button>
+
+<p>The hypotenuse of the right triangle is: <span id="result"></span></p>
+
+<script>
+    function calculateHypotenuse() {
+  const sideA = document.getElementById('side-a').value;
+  const sideB = document.getElementById('side-b').value;
+
+  const hypotenuse = Math.sqrt(sideA ** 2 + sideB ** 2);
+
+  document.getElementById('result').textContent = hypotenuse;
+}
+</script> -->
+
+
+<!-- 3).
+<form>
+    <label for="side1">Side 1:</label>
+    <input type="number" id="side1" name="side1"><br>
+  
+    <label for="side2">Side 2:</label>
+    <input type="number" id="side2" name="side2"><br>
+  
+    <label for="side3">Side 3:</label>
+    <input type="number" id="side3" name="side3"><br>
+  
+    <button onclick="calculatePerimeter()">Calculate Perimeter</button>
+  </form>
+
+<script>
+    function calculatePerimeter() {
+  let side1 = parseFloat(document.getElementById("side1").value);
+  let side2 = parseFloat(document.getElementById("side2").value);
+  let side3 = parseFloat(document.getElementById("side3").value);
+
+  let perimeter = side1 + side2 + side3;
+
+  alert("The perimeter of the triangle is: " + perimeter);
+}
+
+</script> -->
+
+<!-- 4).
+<form>
+    <label for="a">a:</label>
+    <input type="number" id="a" name="a"><br>
+  
+    <label for="b">b:</label>
+    <input type="number" id="b" name="b"><br>
+  
+    <label for="c">c:</label>
+    <input type="number" id="c" name="c"><br>
+  
+    <button onclick="calculateRoots()">Calculate Roots</button>
+  </form>
+
+  <script>
+    function calculateRoots() {
+  let a = parseFloat(document.getElementById("a").value);
+  let b = parseFloat(document.getElementById("b").value);
+  let c = parseFloat(document.getElementById("c").value);
+
+  let discriminant = b * b - 4 * a * c;
+
+  if (discriminant < 0) {
+    console.log("The roots are imaginary.");
+  } else if (discriminant == 0) {
+    let x = -b / (2 * a);
+    console.log("The root is: " + x);
+  } else {
+    let x1 = (-b + Math.sqrt(discriminant)) / (2 * a);
+    let x2 = (-b - Math.sqrt(discriminant)) / (2 * a);
+    console.log("The roots are: " + x1 + " and " + x2);
+  }
+}
+
+  </script> -->
+
+</body>
+</html>
